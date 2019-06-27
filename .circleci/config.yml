@@ -151,6 +151,13 @@ jobs:
           at: .
       - run: node build/check-bundle-size.js "dist/mapbox-gl.js" "GL JS - Minified"
 
+  collect-stats:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: xvfb-run --server-args="-screen 0 1024x768x24" node bench/gl-stats.js
+
   test-flow:
     <<: *defaults
     steps:
