@@ -1,3 +1,5 @@
+/* eslint-disable import/no-commonjs */
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const mapboxGlSrc = fs.readFileSync('dist/mapbox-gl.js', 'utf8');
@@ -40,7 +42,7 @@ map.on('render', () => {
 </html>`;
 
 function waitForConsole(page) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         function onConsole(msg) {
             page.removeListener('console', onConsole);
             resolve(msg.text());

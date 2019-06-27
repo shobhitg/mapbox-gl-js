@@ -26,6 +26,12 @@ workflows:
           filters:
             tags:
               only: /.*/
+      - collect-stats:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /.*/
       - test-flow:
           requires:
             - prepare
