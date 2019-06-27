@@ -162,7 +162,8 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: xvfb-run --server-args="-screen 0 1024x768x24" node bench/gl-stats.js
+      - run: apt-get update -yq && apt-get install -yq libxcomposite1 libxtst6 libnss3 libcups2 libxss1 libasound2 libatk1.0-0 libatk-bridge2.0-0 libpangocairo-1.0-0 libgtk-3-0
+      - run: node bench/gl-stats.js
 
   test-flow:
     <<: *defaults
