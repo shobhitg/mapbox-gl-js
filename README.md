@@ -1,34 +1,7 @@
-[<img width="400" alt="Mapbox" src="docs/pages/assets/logo.png">](https://www.mapbox.com/)
+This is a dist branch that represents the distributable build for the branch https://github.com/shobhitg/mapbox-gl-js/tree/cruise/mapbox-gl-stretch-1.2.0 (Latest commit: https://github.com/shobhitg/mapbox-gl-js/commit/f92aca41d93444ce4ae63449a8ba89877f9acb5b).
 
-**Mapbox GL JS** is a JavaScript library for interactive, customizable vector maps on the web. It takes map styles that conform to the
-[Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/), applies them to vector tiles that
-conform to the [Mapbox Vector Tile Specification](https://github.com/mapbox/vector-tile-spec), and renders them using
-WebGL.
+`cruise/mapbox-gl-stretch-1.2.0` branch is rebased to Mapbox 1.2.0 version, and has one additional commit on top to add the `raster-stretch-minmax` feature which is added via this commit https://github.com/shobhitg/mapbox-gl-js/commit/f92aca41d93444ce4ae63449a8ba89877f9acb5b.
 
-Mapbox GL JS is part of the [cross-platform Mapbox GL ecosystem](https://www.mapbox.com/maps/), which also includes
-compatible native SDKs for applications on [Android](https://docs.mapbox.com/android/maps/overview/),
-[iOS](https://docs.mapbox.com/ios/maps/overview/), [macOS](http://mapbox.github.io/mapbox-gl-native/macos),
-[Qt](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/qt), and [React Native](https://github.com/mapbox/react-native-mapbox-gl/). Mapbox provides building blocks to add location features like maps, search, and navigation into any experience you
-create. To get started with GL JS or any of our other building blocks,
-[sign up for a Mapbox account](https://www.mapbox.com/signup/).
+We will treat both `cruise/mapbox-gl-stretch-1.2.0` and `cruise/mapbox-gl-stretch-1.2.0-dist` branches as readonly/frozen branches.
 
-In addition to GL JS, this repository contains code, issues, and test fixtures that are common to both GL JS and the
-native SDKs. For code and issues specific to the native SDKs, see the
-[mapbox/mapbox-gl-native](https://github.com/mapbox/mapbox-gl-native/) repository.
-
-- [Getting started with Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/overview/)
-- [Tutorials](https://docs.mapbox.com/help/tutorials/#web-apps)
-- [API documentation](https://docs.mapbox.com/mapbox-gl-js/api/)
-- [Examples](https://docs.mapbox.com/mapbox-gl-js/examples/)
-- [Style documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
-- [Open source styles](https://github.com/mapbox/mapbox-gl-styles)
-- [Contributor documentation](https://github.com/mapbox/mapbox-gl-js/blob/master/CONTRIBUTING.md)
-
-[<img width="981" alt="Mapbox GL gallery" src="docs/pages/assets/gallery.png">](https://www.mapbox.com/gallery/)
-
-## License
-
-Mapbox GL JS is licensed under the [3-Clause BSD license](https://github.com/mapbox/mapbox-gl-js/blob/master/LICENSE.txt).
-The licenses of its dependencies are tracked via [FOSSA](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fmapbox%2Fmapbox-gl-js):
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fmapbox%2Fmapbox-gl-js.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fmapbox%2Fmapbox-gl-js?ref=badge_large)
+Except for changes in Readme.md, if for any reason we need to make any additional change in future, then we will make new branches to incorporate those changes.
